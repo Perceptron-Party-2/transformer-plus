@@ -1,5 +1,5 @@
 import torch
-from model import Transformer
+from decoder import Transformer
 from tokenizer import Tokenizer
 
 import constants
@@ -23,11 +23,34 @@ sql_tokenizer = Tokenizer('answers')
 # model.load_weights('model.pt')
 
 def inference(text):
-    input = torch.tensor([text_tokenizer.encode(text)]).to(device)
-    output = model(input)
-    return sql_tokenizer(output[0].argmax(dim=-1).tolist())
+    tokenised_text = text_tokenizer.encode(text)
+    encoder_input = torch.tensor([tokenised_text]).to(device)
+    max_sequence_length = 40
+
+    iterable_sql = sql_tokenizer.sp.bos_id()
+    break_count = 0
+
+    while (iterable_sql != sql_tokenizer.sp.eos_id()) & (break_count <= max_sequence_length):
+        iterable_decoder_tensor = torch.tensor([iterable_sql]).view(1,-1)
+        probability_matrix = model(encoder_input=encoder_input, decoder_input=iterable_decoder_tensor)
+        #print(probability_matrix.size())
+        probability_vector = probability_matrix[0, -1, :]
+        #print(probability_vector.size())
+        next_token_id = (torch.argmax(probability_vector))
+        #print(next_token_id)
+        iterable_sql = [iterable_sql] + [next_token_id.item()]
+        #print(tk.decode(iterable_text))
+        break_count += 1
 
 if __name__ == '__main__':
     question = 'What is the name of the team with the longest name?'
 
     print(inference(question))
+
+
+
+
+
+
+
+
