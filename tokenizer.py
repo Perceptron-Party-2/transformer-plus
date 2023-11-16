@@ -8,15 +8,7 @@ def train(prefix):
         input=f'{prefix}.txt',
         model_prefix=prefix,
         vocab_size=constants.VOCAB_SIZE,
-        model_type='bpe',           
-        pad_id=0,
-        unk_id=1,
-        bos_id=2,
-        eos_id=3,
-        pad_piece='[PAD]',
-        unk_piece='[UNK]',
-        bos_piece='[BOS]',
-        eos_piece='[EOS]'
+        model_type='bpe'
     )
 
 class Tokenizer:
@@ -48,4 +40,3 @@ if __name__ == '__main__':
 
     train('questions')
     train('answers')
-
