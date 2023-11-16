@@ -31,7 +31,7 @@ class Dataset(torch.utils.data.Dataset):
         d_input_pad = torch.nn.utils.rnn.pad_sequence([item['d_input'] for item in batch], batch_first=True, padding_value=self.tk_a.sp.pad_id())
         d_target_pad = torch.nn.utils.rnn.pad_sequence([item['d_target'] for item in batch], batch_first=True, padding_value=self.tk_a.sp.pad_id())
         
-        return { 'd_input': input_pad, 'd_target': label_pad, 'e_text': e_text_pad }
+        return { 'd_input_train': d_input_pad, 'd_target_train': d_target_pad, 'e_text_train': e_text_pad }
 
 
 # In[22]:
