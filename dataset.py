@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
+# In[1]:
 
 
 import torch
 import tokenizer
 import datasets
+
+
+# In[2]:
 
 
 class Dataset(torch.utils.data.Dataset):
@@ -31,13 +34,12 @@ class Dataset(torch.utils.data.Dataset):
         d_input_pad = torch.nn.utils.rnn.pad_sequence([item['d_input'] for item in batch], batch_first=True, padding_value=self.tk_a.sp.pad_id())
         d_target_pad = torch.nn.utils.rnn.pad_sequence([item['d_target'] for item in batch], batch_first=True, padding_value=self.tk_a.sp.pad_id())
         
-        return { 'd_input': input_pad, 'd_target': label_pad, 'e_text': e_text_pad }
+        return { 'd_input': d_input_pad, 'd_target': d_target_pad, 'e_text': e_text_pad }
 
 
-# In[22]:
+# In[3]:
 
 
-#%%
 if __name__ == '__main__':
     i = torch.randint(0,262208, (1,)).item()
     
@@ -45,7 +47,6 @@ if __name__ == '__main__':
     print('len(ds):', len(ds))
     print('i = ', i)
     print('ds[i]:', ds[i])
-# %%
 
 
 # In[ ]:
