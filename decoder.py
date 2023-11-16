@@ -5,7 +5,7 @@
 
 # Import libraries
 
-# In[47]:
+# In[70]:
 
 
 import torch
@@ -14,7 +14,7 @@ import torch.nn as nn
 
 # The embedding layer
 
-# In[65]:
+# In[71]:
 
 
 class EmbeddingLayer(nn.Module):
@@ -22,6 +22,7 @@ class EmbeddingLayer(nn.Module):
         super(EmbeddingLayer, self).__init__()
         self.embed = nn.Embedding(vocab_size, embedding_dim)
         self.embedding_dim = embedding_dim
+        self.weight = self.embed.weight
         
     def positional_embedding(self, text):
         batch_size = text.size(0)
@@ -40,16 +41,9 @@ class EmbeddingLayer(nn.Module):
         return positionally_embedded_text
 
 
-# In[79]:
-
-
-# emb = EmbeddingLayer(8, 5)
-# print(emb(torch.tensor([[1, 3, 5, 7]])))
-
-
 # (Masked) Multi-head attention
 
-# In[ ]:
+# In[72]:
 
 
 class MultiHeadAttention(nn.Module):
@@ -85,15 +79,15 @@ class MultiHeadAttention(nn.Module):
         attention_scores = torch.matmul(query, key.transpose(-2, -1)) / torch.sqrt(torch.tensor(self.head_dim, dtype=torch.float32))
 
         # Apply mask if provided
-        if forward_masked == True:
+        if self.forward_masked == True:
             mask = torch.tril(torch.ones_like(attention_scores))
             attention_scores = attention_scores.masked_fill(mask == 0, float('-inf'))
 
         attention_weights = torch.nn.functional.softmax(attention_scores, dim=-1)
         attention_output = torch.matmul(attention_weights, value)
 
-        # Merge heads
-        attention_output = attention_output.transpose(1, 2).contiguous().view(batch_size, value_length, self.d_model)
+        # Merge head
+        attention_output = attention_output.transpose(1, 2).contiguous().view(batch_size, query_length, self.d_model)
 
         # Linear projection
         output = self.W_o(attention_output)
@@ -101,29 +95,17 @@ class MultiHeadAttention(nn.Module):
         return output
 
 
-# In[76]:
-
-
-#a = torch.nn.functional.softmax(torch.ones(2,3), dim=-1)
-
-
-# In[81]:
-
-
-#torch.matmul(a, torch.ones(3,2))
-
-
 # The feed forward layer
 
-# In[ ]:
+# In[73]:
 
 
 class FeedForward(nn.Module):
     def __init__(self, d_model, ff_dim):
         super(FeedForward, self).__init__()
-        self.linear1 = nn.Linear(d_model, d_ff)
+        self.linear1 = nn.Linear(d_model, ff_dim)
         self.relu = nn.ReLU()
-        self.linear2 = nn.Linear(d_ff, d_model)
+        self.linear2 = nn.Linear(ff_dim, d_model)
 
     def forward(self, x):
         x = self.linear1(x)
@@ -134,7 +116,7 @@ class FeedForward(nn.Module):
 
 # The encoder
 
-# In[ ]:
+# In[74]:
 
 
 class Encoder(nn.Module):
@@ -174,7 +156,7 @@ class Encoder(nn.Module):
 
 # The decoder
 
-# In[63]:
+# In[75]:
 
 
 class Decoder(nn.Module):
@@ -198,7 +180,7 @@ class Decoder(nn.Module):
         self.ff = FeedForward(embedding_dim, ff_dim)
         
         self.linear = nn.Linear(embedding_dim, vocab_size)
-        self.linear.weights = self.embed.weights
+        self.linear.weight = self.embed.weight
         
         self.softmax = nn.Softmax()
     
@@ -233,7 +215,7 @@ class Decoder(nn.Module):
 
 # The transformer
 
-# In[ ]:
+# In[76]:
 
 
 class Transformer(nn.Module):
@@ -244,11 +226,26 @@ class Transformer(nn.Module):
             self.encoder = Encoder(vocab_size, embedding_dim, ff_dim, num_heads, num_layers, dropout)
         self.decoder = Decoder(vocab_size, embedding_dim, ff_dim, num_heads, num_layers, dropout, with_encoder)
 
-    def forward(self, text):
+    def forward(self, encoder_input, decoder_input):
         if self.with_encoder == True:
-            encoder_output = self.encoder(text)
-            probabilities = self.decoder(text, encoder_output)
+            encoder_output = self.encoder(encoder_input)
+            probabilities = self.decoder(decoder_input, encoder_output)
         else:    
-            probabilities = self.decoder(text, encoder_output = None)
-        return x
+            probabilities = self.decoder(decoder_input, encoder_output = None)
+        return probabilities
+
+
+# A main method for sanity checking
+
+# In[77]:
+
+
+if __name__ == '__main__':
+    encoder_input = torch.randint(0, 16000, (4, 16))
+    decoder_input = torch.randint(0, 16000, (4, 24))
+    
+    test_transformer = Transformer(16000, 16, 32, 2, 1, 0, True)
+    output = test_transformer(encoder_input, decoder_input)
+    
+    print(output.shape)
 
