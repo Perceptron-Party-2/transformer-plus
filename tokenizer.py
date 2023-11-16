@@ -8,7 +8,11 @@ def train(prefix):
         input=f'{prefix}.txt',
         model_prefix=prefix,
         vocab_size=constants.VOCAB_SIZE,
-        model_type='bpe'
+        model_type='bpe',
+        pad_id=0,
+        unk_id=1,
+        bos_id=2,
+        eos_id=3,
     )
 
 class Tokenizer:
