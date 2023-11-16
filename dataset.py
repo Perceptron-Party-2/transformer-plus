@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
+# In[19]:
 
 
 import torch
@@ -32,4 +32,24 @@ class Dataset(torch.utils.data.Dataset):
         d_target_pad = torch.nn.utils.rnn.pad_sequence([item['d_target'] for item in batch], batch_first=True, padding_value=self.tk_a.sp.pad_id())
         
         return { 'd_input': input_pad, 'd_target': label_pad, 'e_text': e_text_pad }
+
+
+# In[22]:
+
+
+#%%
+if __name__ == '__main__':
+    i = torch.randint(0,262208, (1,)).item()
+    
+    ds = Dataset()
+    print('len(ds):', len(ds))
+    print('i = ', i)
+    print('ds[i]:', ds[i])
+# %%
+
+
+# In[ ]:
+
+
+
 
