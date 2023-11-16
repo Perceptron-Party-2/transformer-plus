@@ -27,20 +27,24 @@ def inference(text):
     encoder_input = torch.tensor([tokenised_text]).to(device)
     max_sequence_length = 40
 
-    iterable_sql = sql_tokenizer.sp.bos_id()
+    next_token_id = sql_tokenizer.sp.bos_id()
+    iterable_sql = [next_token_id]
     break_count = 0
 
-    while (iterable_sql != sql_tokenizer.sp.eos_id()) & (break_count <= max_sequence_length):
-        iterable_decoder_tensor = torch.tensor([iterable_sql]).view(1,-1)
+    while (next_token_id != sql_tokenizer.sp.eos_id()) & (break_count <= max_sequence_length):
+        # print(iterable_sql)
+        iterable_decoder_tensor = torch.tensor(iterable_sql).view(1,-1)
         probability_matrix = model(encoder_input=encoder_input, decoder_input=iterable_decoder_tensor)
         #print(probability_matrix.size())
         probability_vector = probability_matrix[0, -1, :]
         #print(probability_vector.size())
-        next_token_id = (torch.argmax(probability_vector))
+        next_token_id = (torch.multinomial(probability_vector, 1))
         #print(next_token_id)
-        iterable_sql = [iterable_sql] + [next_token_id.item()]
+        iterable_sql = iterable_sql + [next_token_id.item()]
         #print(tk.decode(iterable_text))
         break_count += 1
+
+    return sql_tokenizer.decode(iterable_sql)
 
 if __name__ == '__main__':
     question = 'What is the name of the team with the longest name?'
