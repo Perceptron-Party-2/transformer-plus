@@ -1,0 +1,100 @@
+{
+    "os": "Linux-5.15.0-87-generic-x86_64-with-glibc2.35",
+    "python": "3.11.5",
+    "heartbeatAt": "2023-11-16T16:27:04.805338",
+    "startedAt": "2023-11-16T16:27:03.764819",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/louis/projects/week4/transformer-plus/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "git@github.com:Perceptron-Party-2/transformer-plus.git",
+        "commit": null
+    },
+    "email": null,
+    "root": "/home/louis/projects/week4/transformer-plus",
+    "host": "k3s-agent-4",
+    "username": "root",
+    "executable": "/home/louis/miniconda3/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 4005.294833333333,
+        "min": 2200.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4005.241,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.247,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.167,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.419,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.417,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.482,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.027,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.205,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.128,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.382,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.38,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4005.443,
+            "min": 2200.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 435.77496337890625,
+            "used": 108.17611312866211
+        }
+    },
+    "memory": {
+        "total": 62.71131134033203
+    }
+}

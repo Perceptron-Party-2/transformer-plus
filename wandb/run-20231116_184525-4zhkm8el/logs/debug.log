@@ -1,0 +1,21 @@
+2023-11-16 18:45:25,714 INFO    MainThread:1218036 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_setup.py:_flush():76] Configure stats pid to 1218036
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_setup.py:_flush():76] Loading settings from /home/louis/projects/week4/transformer-plus/wandb/settings
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/home/louis/projects/week4/transformer-plus/train.py', 'program': '/home/louis/projects/week4/transformer-plus/train.py'}
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_init.py:_log_setup():524] Logging user logs to /home/louis/projects/week4/transformer-plus/wandb/run-20231116_184525-4zhkm8el/logs/debug.log
+2023-11-16 18:45:25,715 INFO    MainThread:1218036 [wandb_init.py:_log_setup():525] Logging internal logs to /home/louis/projects/week4/transformer-plus/wandb/run-20231116_184525-4zhkm8el/logs/debug-internal.log
+2023-11-16 18:45:25,716 INFO    MainThread:1218036 [wandb_init.py:init():564] calling init triggers
+2023-11-16 18:45:25,716 INFO    MainThread:1218036 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.1, 'dimensions': 128, 'vocab_size': 16000, 'epochs': 1, 'num_heads': 8, 'num_layers': 4, 'ff_dim': 256, 'dropout': 0.1, 'batch_size': 64}
+2023-11-16 18:45:25,716 INFO    MainThread:1218036 [wandb_init.py:init():614] starting backend
+2023-11-16 18:45:25,716 INFO    MainThread:1218036 [wandb_init.py:init():618] setting up manager
+2023-11-16 18:45:25,719 INFO    MainThread:1218036 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-11-16 18:45:25,731 INFO    MainThread:1218036 [wandb_init.py:init():624] backend started and connected
+2023-11-16 18:45:25,736 INFO    MainThread:1218036 [wandb_init.py:init():716] updated telemetry
+2023-11-16 18:45:25,748 INFO    MainThread:1218036 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2023-11-16 18:45:26,494 INFO    MainThread:1218036 [wandb_run.py:_on_init():2254] communicating current version
+2023-11-16 18:45:26,593 INFO    MainThread:1218036 [wandb_run.py:_on_init():2263] got version response 
+2023-11-16 18:45:26,593 INFO    MainThread:1218036 [wandb_init.py:init():800] starting run threads in backend

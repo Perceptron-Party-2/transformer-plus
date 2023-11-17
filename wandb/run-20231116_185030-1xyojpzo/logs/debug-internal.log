@@ -1,0 +1,127 @@
+2023-11-16 18:50:30,998 INFO    StreamThr :1225609 [internal.py:wandb_internal():86] W&B internal server running at pid: 1225609, started at: 2023-11-16 18:50:30.997583
+2023-11-16 18:50:31,040 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status
+2023-11-16 18:50:31,051 INFO    WriterThread:1225609 [datastore.py:open_for_write():85] open: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/run-1xyojpzo.wandb
+2023-11-16 18:50:31,053 DEBUG   SenderThread:1225609 [sender.py:send():380] send: header
+2023-11-16 18:50:31,053 DEBUG   SenderThread:1225609 [sender.py:send():380] send: run
+2023-11-16 18:50:31,583 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: check_version
+2023-11-16 18:50:31,620 INFO    SenderThread:1225609 [dir_watcher.py:__init__():211] watching files in: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files
+2023-11-16 18:50:31,621 INFO    SenderThread:1225609 [sender.py:_start_run_threads():1124] run started: 1xyojpzo with start time 1700157030.98564
+2023-11-16 18:50:31,621 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: check_version
+2023-11-16 18:50:31,762 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: run_start
+2023-11-16 18:50:31,765 DEBUG   HandlerThread:1225609 [system_info.py:__init__():32] System info init
+2023-11-16 18:50:31,766 DEBUG   HandlerThread:1225609 [system_info.py:__init__():47] System info init done
+2023-11-16 18:50:31,766 INFO    HandlerThread:1225609 [system_monitor.py:start():194] Starting system monitor
+2023-11-16 18:50:31,779 INFO    HandlerThread:1225609 [system_monitor.py:probe():214] Collecting system info
+2023-11-16 18:50:31,781 INFO    SystemMonitor:1225609 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-16 18:50:31,796 INFO    SystemMonitor:1225609 [interfaces.py:start():190] Started cpu monitoring
+2023-11-16 18:50:31,809 INFO    SystemMonitor:1225609 [interfaces.py:start():190] Started disk monitoring
+2023-11-16 18:50:31,816 DEBUG   HandlerThread:1225609 [system_info.py:probe():196] Probing system
+2023-11-16 18:50:31,823 DEBUG   HandlerThread:1225609 [system_info.py:_probe_git():181] Probing git
+2023-11-16 18:50:31,855 DEBUG   HandlerThread:1225609 [system_info.py:_probe_git():189] Probing git done
+2023-11-16 18:50:31,856 DEBUG   HandlerThread:1225609 [system_info.py:probe():244] Probing system done
+2023-11-16 18:50:31,856 DEBUG   HandlerThread:1225609 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-87-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2023-11-16T17:50:31.816390', 'startedAt': '2023-11-16T17:50:30.965410', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/louis/projects/week4/transformer-plus/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:Perceptron-Party-2/transformer-plus.git', 'commit': 'eebf47a6966d32c609e5c61c09cfe0cb0077c028'}, 'email': None, 'root': '/home/louis/projects/week4/transformer-plus', 'host': 'k3s-agent-4', 'username': 'root', 'executable': '/home/louis/miniconda3/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 4026.8630833333336, 'min': 2200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 4024.943, 'min': 2200.0, 'max': 3600.0}, {'current': 4024.916, 'min': 2200.0, 'max': 3600.0}, {'current': 4024.882, 'min': 2200.0, 'max': 3600.0}, {'current': 4028.568, 'min': 2200.0, 'max': 3600.0}, {'current': 4028.633, 'min': 2200.0, 'max': 3600.0}, {'current': 4028.628, 'min': 2200.0, 'max': 3600.0}, {'current': 4025.163, 'min': 2200.0, 'max': 3600.0}, {'current': 4025.161, 'min': 2200.0, 'max': 3600.0}, {'current': 4025.126, 'min': 2200.0, 'max': 3600.0}, {'current': 4028.742, 'min': 2200.0, 'max': 3600.0}, {'current': 4028.798, 'min': 2200.0, 'max': 3600.0}, {'current': 4028.797, 'min': 2200.0, 'max': 3600.0}], 'disk': {'/': {'total': 435.77496337890625, 'used': 108.24673843383789}}, 'memory': {'total': 62.71131134033203}}
+2023-11-16 18:50:31,856 INFO    HandlerThread:1225609 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-16 18:50:31,856 INFO    HandlerThread:1225609 [system_monitor.py:probe():227] Publishing system info
+2023-11-16 18:50:31,856 DEBUG   HandlerThread:1225609 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-16 18:50:31,865 INFO    SystemMonitor:1225609 [interfaces.py:start():190] Started memory monitoring
+2023-11-16 18:50:31,870 DEBUG   HandlerThread:1225609 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-16 18:50:31,871 DEBUG   HandlerThread:1225609 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-16 18:50:31,885 INFO    SystemMonitor:1225609 [interfaces.py:start():190] Started network monitoring
+2023-11-16 18:50:32,617 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/requirements.txt
+2023-11-16 18:50:32,617 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/conda-environment.yaml
+2023-11-16 18:50:35,614 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/conda-environment.yaml
+2023-11-16 18:50:35,637 DEBUG   HandlerThread:1225609 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-16 18:50:35,639 INFO    HandlerThread:1225609 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-16 18:50:35,643 DEBUG   SenderThread:1225609 [sender.py:send():380] send: files
+2023-11-16 18:50:35,643 INFO    SenderThread:1225609 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-16 18:50:35,662 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 18:50:35,663 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 18:50:35,690 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 18:50:35,863 DEBUG   SenderThread:1225609 [sender.py:send():380] send: telemetry
+2023-11-16 18:50:36,365 INFO    wandb-upload_0:1225609 [upload_job.py:push():131] Uploaded file /tmp/tmp1barc9hzwandb/bx5fwpxg-wandb-metadata.json
+2023-11-16 18:50:36,615 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/wandb-metadata.json
+2023-11-16 18:50:36,864 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:50:39,618 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:41,625 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:41,918 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:50:43,628 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:45,630 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:47,034 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:50:47,631 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:49,634 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:50,661 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 18:50:50,662 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 18:50:50,684 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 18:50:51,638 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:52,088 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:50:53,639 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:55,644 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:57,275 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:50:57,646 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:50:59,650 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:01,653 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:02,681 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:03,657 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:03,658 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/config.yaml
+2023-11-16 18:51:05,659 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:05,662 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 18:51:05,662 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 18:51:05,687 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 18:51:07,676 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:07,982 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:09,666 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:11,667 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:13,354 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:13,678 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:15,679 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:17,679 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:18,869 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:19,682 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:20,669 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 18:51:20,669 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 18:51:20,685 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 18:51:21,684 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:23,686 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:23,893 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:25,687 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:27,689 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:29,049 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:29,693 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:31,698 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:31,888 DEBUG   SystemMonitor:1225609 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-16 18:51:31,894 DEBUG   SenderThread:1225609 [sender.py:send():380] send: stats
+2023-11-16 18:51:33,702 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:34,214 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:35,671 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 18:51:35,672 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 18:51:35,683 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 18:51:35,705 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:37,707 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:39,510 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:39,708 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:41,709 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:43,712 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:44,673 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:45,714 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:47,717 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:49,706 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:49,720 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:50,669 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 18:51:50,670 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 18:51:50,688 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 18:51:51,725 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:53,727 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:54,793 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:51:55,728 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:57,736 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:59,738 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:51:59,993 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:52:01,739 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:52:01,892 DEBUG   SenderThread:1225609 [sender.py:send():380] send: stats
+2023-11-16 18:52:03,740 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:52:05,030 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 18:52:05,670 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 18:52:05,670 DEBUG   SenderThread:1225609 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 18:52:05,689 DEBUG   HandlerThread:1225609 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 18:52:05,744 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log
+2023-11-16 18:52:07,745 INFO    Thread-17 :1225609 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_185030-1xyojpzo/files/output.log

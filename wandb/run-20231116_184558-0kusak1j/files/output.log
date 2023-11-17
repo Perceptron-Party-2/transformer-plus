@@ -1,0 +1,3 @@
+/home/louis/miniconda3/lib/python3.11/site-packages/datasets/table.py:1421: FutureWarning: promote has been superseded by mode='default'.
+  table = cls._concat_blocks(blocks, axis=0)
+/home/louis/projects/week4/transformer-plus/decoder.py:211: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.

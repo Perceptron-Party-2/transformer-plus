@@ -1,0 +1,57 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 0.1
+dimensions:
+  desc: null
+  value: 128
+vocab_size:
+  desc: null
+  value: 16000
+epochs:
+  desc: null
+  value: 1
+num_heads:
+  desc: null
+  value: 8
+num_layers:
+  desc: null
+  value: 4
+ff_dim:
+  desc: null
+  value: 256
+dropout:
+  desc: null
+  value: 0.1
+batch_size:
+  desc: null
+  value: 4
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.5
+    cli_version: 0.16.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1700157141.82072
+    t:
+      1:
+      - 1
+      - 49
+      - 51
+      - 55
+      2:
+      - 1
+      - 49
+      - 51
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.11.5
+      5: 0.16.0
+      8:
+      - 5
+      13: linux-x86_64

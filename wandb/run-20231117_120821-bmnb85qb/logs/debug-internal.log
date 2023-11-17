@@ -1,0 +1,1194 @@
+2023-11-17 12:08:21,652 INFO    StreamThr :2522814 [internal.py:wandb_internal():86] W&B internal server running at pid: 2522814, started at: 2023-11-17 12:08:21.650787
+2023-11-17 12:08:21,706 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status
+2023-11-17 12:08:21,729 INFO    WriterThread:2522814 [datastore.py:open_for_write():85] open: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/run-bmnb85qb.wandb
+2023-11-17 12:08:21,732 DEBUG   SenderThread:2522814 [sender.py:send():380] send: header
+2023-11-17 12:08:21,733 DEBUG   SenderThread:2522814 [sender.py:send():380] send: run
+2023-11-17 12:08:22,484 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: check_version
+2023-11-17 12:08:22,509 INFO    SenderThread:2522814 [dir_watcher.py:__init__():211] watching files in: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files
+2023-11-17 12:08:22,509 INFO    SenderThread:2522814 [sender.py:_start_run_threads():1124] run started: bmnb85qb with start time 1700219301.640322
+2023-11-17 12:08:22,509 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: check_version
+2023-11-17 12:08:22,618 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: run_start
+2023-11-17 12:08:22,621 DEBUG   HandlerThread:2522814 [system_info.py:__init__():32] System info init
+2023-11-17 12:08:22,621 DEBUG   HandlerThread:2522814 [system_info.py:__init__():47] System info init done
+2023-11-17 12:08:22,621 INFO    HandlerThread:2522814 [system_monitor.py:start():194] Starting system monitor
+2023-11-17 12:08:22,629 INFO    HandlerThread:2522814 [system_monitor.py:probe():214] Collecting system info
+2023-11-17 12:08:22,637 INFO    SystemMonitor:2522814 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-17 12:08:22,660 INFO    SystemMonitor:2522814 [interfaces.py:start():190] Started cpu monitoring
+2023-11-17 12:08:22,757 INFO    SystemMonitor:2522814 [interfaces.py:start():190] Started disk monitoring
+2023-11-17 12:08:22,758 DEBUG   HandlerThread:2522814 [system_info.py:probe():196] Probing system
+2023-11-17 12:08:22,773 DEBUG   HandlerThread:2522814 [system_info.py:_probe_git():181] Probing git
+2023-11-17 12:08:22,797 DEBUG   HandlerThread:2522814 [system_info.py:_probe_git():189] Probing git done
+2023-11-17 12:08:22,797 DEBUG   HandlerThread:2522814 [system_info.py:probe():244] Probing system done
+2023-11-17 12:08:22,798 DEBUG   HandlerThread:2522814 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-87-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2023-11-17T11:08:22.768568', 'startedAt': '2023-11-17T11:08:21.616204', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/louis/projects/week4/transformer-plus/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:Perceptron-Party-2/transformer-plus.git', 'commit': '9e3103fc6bcc48715a7112289a6474ea5e9c133b'}, 'email': None, 'root': '/home/louis/projects/week4/transformer-plus', 'host': 'k3s-agent-4', 'username': 'root', 'executable': '/home/louis/miniconda3/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 4014.659916666666, 'min': 2200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 4021.376, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.509, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.492, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.836, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.639, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.738, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.376, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.508, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.822, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.608, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.414, 'min': 2200.0, 'max': 3600.0}, {'current': 4021.499, 'min': 2200.0, 'max': 3600.0}], 'disk': {'/': {'total': 435.77496337890625, 'used': 109.5172119140625}}, 'memory': {'total': 62.71131134033203}}
+2023-11-17 12:08:22,798 INFO    HandlerThread:2522814 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-17 12:08:22,798 INFO    HandlerThread:2522814 [system_monitor.py:probe():227] Publishing system info
+2023-11-17 12:08:22,798 DEBUG   HandlerThread:2522814 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-17 12:08:22,799 DEBUG   HandlerThread:2522814 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-17 12:08:22,799 DEBUG   HandlerThread:2522814 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-17 12:08:22,809 INFO    SystemMonitor:2522814 [interfaces.py:start():190] Started memory monitoring
+2023-11-17 12:08:22,817 INFO    SystemMonitor:2522814 [interfaces.py:start():190] Started network monitoring
+2023-11-17 12:08:23,509 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/conda-environment.yaml
+2023-11-17 12:08:23,510 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/requirements.txt
+2023-11-17 12:08:26,506 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/conda-environment.yaml
+2023-11-17 12:08:26,552 DEBUG   HandlerThread:2522814 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-17 12:08:26,554 INFO    HandlerThread:2522814 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-17 12:08:26,565 DEBUG   SenderThread:2522814 [sender.py:send():380] send: files
+2023-11-17 12:08:26,565 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-17 12:08:26,585 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:08:26,590 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:08:26,610 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:08:26,889 DEBUG   SenderThread:2522814 [sender.py:send():380] send: telemetry
+2023-11-17 12:08:26,889 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:08:27,290 INFO    wandb-upload_0:2522814 [upload_job.py:push():131] Uploaded file /tmp/tmp5am0bdn4wandb/r6pnvfnj-wandb-metadata.json
+2023-11-17 12:08:27,507 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-metadata.json
+2023-11-17 12:08:29,508 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:30,729 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:30,731 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:30,732 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:30,732 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:31,012 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:31,013 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:31,013 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:31,013 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:31,324 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:31,325 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:31,325 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:31,326 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:31,509 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:31,510 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:31,653 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:31,654 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:31,655 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:31,655 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:31,877 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:31,879 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:31,879 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:31,879 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:32,511 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:32,670 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:32,671 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:32,671 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:32,671 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:08:32,682 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:33,021 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:33,022 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:33,022 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:33,022 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:33,512 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:33,512 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:33,917 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:33,918 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:33,918 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:33,919 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:34,337 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:34,338 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:34,338 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:34,339 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:34,513 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:34,805 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:34,806 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:34,806 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:34,807 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:35,514 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:35,514 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:35,899 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:35,900 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:35,901 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:35,901 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:36,222 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:36,223 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:36,223 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:36,223 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:36,515 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:36,744 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:36,745 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:36,746 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:36,746 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:37,064 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:37,066 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:37,066 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:37,066 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:37,517 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:37,518 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:37,527 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:37,528 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:37,528 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:37,529 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:37,886 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:37,887 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:37,888 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:37,888 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:37,889 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:08:38,519 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:38,857 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:38,858 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:38,858 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:38,859 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:39,149 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:39,150 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:39,151 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:39,151 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:39,408 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:39,409 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:39,409 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:39,409 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:39,529 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:39,530 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:39,779 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:39,780 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:39,780 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:39,781 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:40,113 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:40,114 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:40,114 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:40,114 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:40,464 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:40,465 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:40,465 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:40,466 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:40,528 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:40,976 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:40,977 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:40,977 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:40,977 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:41,533 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:41,534 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:41,534 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:41,535 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:41,537 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:41,537 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:41,585 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:08:41,589 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:08:41,611 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:08:41,763 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:41,871 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:41,871 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:41,871 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:42,056 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:42,057 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:42,057 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:42,058 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:42,463 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:42,465 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:42,465 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:42,465 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:42,538 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:43,034 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:43,035 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:43,035 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:43,035 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:08:43,044 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:43,434 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:43,435 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:43,435 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:43,435 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:43,542 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:43,809 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:43,810 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:43,810 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:43,811 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:44,258 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:44,259 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:44,259 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:44,260 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:44,542 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:44,543 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:44,670 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:44,671 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:44,671 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:44,690 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:45,052 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:45,053 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:45,054 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:45,054 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:45,559 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:45,559 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:45,901 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:45,902 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:45,902 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:45,916 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:46,373 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:46,374 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:46,375 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:46,375 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:46,559 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:46,669 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:46,670 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:46,670 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:46,670 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:46,944 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:46,949 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:46,949 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:46,964 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:47,281 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:47,282 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:47,282 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:47,282 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:47,562 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:47,653 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:47,657 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:47,658 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:47,658 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:48,087 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:48,091 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:48,092 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:48,092 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:08:48,092 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:48,563 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:48,564 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:48,846 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:48,847 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:48,847 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:48,848 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:49,130 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:49,132 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:49,132 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:49,132 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:49,421 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:49,422 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:49,423 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:49,423 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:49,564 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:49,631 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:49,632 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:49,632 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:49,633 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:49,904 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:49,905 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:49,905 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:49,920 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:50,313 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:50,314 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:50,314 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:50,315 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:50,569 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:50,569 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:50,671 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:50,672 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:50,672 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:50,682 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:51,295 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:51,296 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:51,296 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:51,297 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:51,570 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:51,669 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:51,670 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:51,670 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:51,680 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:52,120 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:52,121 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:52,122 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:52,122 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:52,495 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:52,497 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:52,497 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:52,498 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:52,575 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:52,575 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:52,782 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:52,783 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:52,783 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:52,784 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:53,393 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:53,394 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:53,402 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:08:53,577 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:53,671 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:53,672 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:53,829 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:53,833 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:53,834 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:53,834 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:54,578 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:54,579 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:54,579 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/config.yaml
+2023-11-17 12:08:54,850 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:54,851 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:54,852 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:54,852 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:55,316 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:55,317 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:55,318 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:55,318 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:55,542 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:55,548 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:55,549 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:55,549 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:55,582 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:55,762 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:55,763 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:55,763 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:55,763 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:56,042 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:56,043 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:56,043 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:56,044 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:56,551 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:56,552 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:56,552 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:56,553 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:56,584 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:56,584 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:56,585 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:08:56,586 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:08:56,613 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:08:56,911 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:56,912 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:56,912 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:56,913 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:57,267 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:57,268 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:57,268 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:57,269 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:57,585 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:57,590 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:57,591 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:57,591 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:57,591 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:57,905 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:57,906 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:57,906 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:57,906 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:58,433 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:58,434 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:58,434 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:58,435 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:58,585 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:58,586 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:08:58,865 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:58,872 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:58,872 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:58,873 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:08:58,875 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:59,148 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:59,149 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:59,150 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:59,163 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:59,431 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:59,432 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:59,433 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:59,433 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:08:59,589 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:08:59,974 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:08:59,976 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:08:59,976 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:08:59,976 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:00,417 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:00,418 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:00,419 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:00,419 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:00,590 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:00,590 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:00,961 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:00,962 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:00,962 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:00,963 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:01,590 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:01,674 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:01,675 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:01,675 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:01,685 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:02,569 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:02,570 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:02,570 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:02,571 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:02,595 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:02,595 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:03,152 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:03,154 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:03,154 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:03,154 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:03,591 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:03,873 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:03,874 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:03,874 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:03,875 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:03,876 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:04,369 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:04,378 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:04,378 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:04,378 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:04,595 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:04,595 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:04,671 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:04,673 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:04,674 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:04,674 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:04,942 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:04,943 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:04,943 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:04,943 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:05,502 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:05,503 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:05,503 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:05,504 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:05,596 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:05,948 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:05,949 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:05,949 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:05,950 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:06,321 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:06,322 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:06,322 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:06,323 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:06,597 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:06,597 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:06,630 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:06,631 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:06,631 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:06,631 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:07,130 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:07,131 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:07,132 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:07,141 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:07,506 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:07,506 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:07,507 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:07,507 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:07,598 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:07,863 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:07,865 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:07,865 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:07,866 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:08,222 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:08,225 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:08,226 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:08,235 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:08,453 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:08,457 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:08,457 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:08,458 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:08,604 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:08,604 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:08,606 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:08,607 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:08,607 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:08,618 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:09,306 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:09,311 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:09,312 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:09,312 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:09,312 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:09,606 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:09,826 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:09,827 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:09,827 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:09,833 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:10,429 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:10,432 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:10,432 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:10,432 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:10,607 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:10,607 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:10,669 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:10,670 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:10,670 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:10,684 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:11,370 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:11,371 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:11,371 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:11,372 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:11,587 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:09:11,588 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:09:11,607 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:11,613 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:09:11,728 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:11,754 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:11,754 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:11,755 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:11,981 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:11,982 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:11,983 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:11,983 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:12,181 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:12,182 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:12,182 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:12,183 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:12,541 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:12,542 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:12,543 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:12,543 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:12,608 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:12,608 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:12,858 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:12,860 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:12,860 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:12,861 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:13,302 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:13,303 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:13,304 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:13,304 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:13,549 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:13,551 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:13,551 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:13,552 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:13,612 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:13,997 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:13,998 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:13,999 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:13,999 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:14,347 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:14,348 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:14,349 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:14,349 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:14,350 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:14,613 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:14,614 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:14,886 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:14,887 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:14,887 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:14,888 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:15,571 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:15,572 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:15,572 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:15,573 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:15,613 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:15,933 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:15,934 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:15,935 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:15,935 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:16,192 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:16,193 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:16,194 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:16,194 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:16,614 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:16,614 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:16,790 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:16,792 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:16,792 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:16,792 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:17,448 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:17,449 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:17,450 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:17,450 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:17,615 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:18,374 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:18,375 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:18,375 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:18,376 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:18,617 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:18,617 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:18,708 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:18,709 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:18,709 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:18,710 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:19,100 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:19,101 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:19,102 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:19,102 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:19,470 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:19,472 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:19,472 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:19,473 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:19,473 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:19,618 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:19,747 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:19,748 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:19,748 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:19,748 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:20,091 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:20,092 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:20,092 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:20,093 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:20,353 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:20,354 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:20,354 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:20,355 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:20,618 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:20,619 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:21,233 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:21,234 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:21,234 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:21,243 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:21,619 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:21,801 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:21,805 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:21,805 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:21,806 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:22,171 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:22,172 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:22,172 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:22,173 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:22,390 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:22,391 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:22,392 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:22,405 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:22,620 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:22,620 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:22,674 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:22,676 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:22,676 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:22,677 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:22,821 DEBUG   SystemMonitor:2522814 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-17 12:09:22,823 DEBUG   SenderThread:2522814 [sender.py:send():380] send: stats
+2023-11-17 12:09:23,026 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:23,028 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:23,033 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:23,042 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:23,193 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:23,194 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:23,195 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:23,195 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:23,604 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:23,605 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:23,606 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:23,606 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:23,620 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:23,912 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:23,913 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:23,913 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:23,914 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:24,206 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:24,208 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:24,208 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:24,209 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:24,402 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:24,404 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:24,405 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:24,406 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:24,621 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:24,622 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:24,781 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:24,782 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:24,782 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:24,783 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:24,783 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:25,085 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:25,086 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:25,086 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:25,095 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:25,498 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:25,499 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:25,500 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:25,500 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:25,622 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:25,831 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:25,835 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:25,835 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:25,836 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:26,105 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:26,105 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:26,106 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:26,106 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:26,587 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:09:26,595 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:09:26,617 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:09:26,625 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:26,626 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:26,676 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:26,945 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:26,945 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:26,946 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:27,013 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:27,017 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:27,017 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:27,018 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:27,437 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:27,438 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:27,438 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:27,438 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:27,626 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:27,658 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:27,658 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:27,659 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:27,659 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:28,411 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:28,412 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:28,412 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:28,413 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:28,626 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:28,627 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:29,448 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:29,453 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:29,453 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:29,453 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:29,627 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:29,833 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:29,834 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:29,834 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:29,835 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:29,835 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:30,154 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:30,158 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:30,159 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:30,171 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:30,454 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:30,456 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:30,456 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:30,456 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:30,627 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:30,628 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:31,102 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:31,107 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:31,107 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:31,108 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:31,504 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:31,505 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:31,506 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:31,506 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:31,629 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:31,937 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:31,938 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:31,939 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:31,939 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:32,154 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:32,155 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:32,155 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:32,155 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:32,600 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:32,601 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:32,601 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:32,602 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:32,629 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:32,630 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:32,992 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:32,997 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:32,998 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:32,998 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:33,377 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:33,381 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:33,382 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:33,382 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:33,631 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:33,829 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:33,832 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:33,833 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:33,833 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:34,087 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:34,089 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:34,089 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:34,090 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:34,448 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:34,450 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:34,450 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:34,451 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:34,631 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:34,638 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:34,741 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:34,742 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:34,743 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:34,743 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:35,055 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:35,056 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:35,057 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:35,057 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:35,058 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:35,634 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:35,754 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:35,755 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:35,755 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:35,765 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:36,129 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:36,130 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:36,130 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:36,139 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:36,397 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:36,398 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:36,398 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:36,399 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:36,638 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:36,638 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:36,647 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:36,648 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:36,648 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:36,648 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:36,966 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:36,967 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:36,967 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:36,968 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:37,319 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:37,321 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:37,321 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:37,321 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:37,638 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:37,943 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:37,944 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:37,944 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:37,945 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:38,381 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:38,382 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:38,382 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:38,382 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:38,639 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:38,639 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:38,710 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:38,712 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:38,712 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:38,712 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:39,041 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:39,042 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:39,043 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:39,043 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:39,513 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:39,514 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:39,514 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:39,515 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:39,639 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:40,027 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:40,028 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:40,028 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:40,029 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:40,353 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:40,354 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:40,354 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:40,355 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:40,355 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:40,600 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:40,601 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:40,602 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:40,602 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:40,640 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:40,640 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:41,055 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:41,060 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:41,060 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:41,061 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:41,557 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:41,561 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:41,562 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:41,562 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:41,592 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:09:41,592 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:09:41,617 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:09:41,641 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:41,962 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:41,963 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:41,963 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:41,977 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:42,481 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:42,485 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:42,486 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:42,486 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:42,642 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:42,643 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:42,689 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:42,690 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:42,690 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:42,690 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:43,045 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:43,049 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:43,049 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:43,050 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:43,407 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:43,408 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:43,409 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:43,409 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:43,642 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:44,048 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:44,049 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:44,050 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:44,059 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:44,408 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:44,410 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:44,410 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:44,410 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:44,643 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:44,643 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:44,816 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:44,817 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:44,817 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:44,818 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:45,305 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:45,307 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:45,307 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:45,307 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:45,587 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:45,588 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:45,588 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:45,589 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:45,590 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:45,644 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:45,850 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:45,851 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:45,851 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:45,851 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:46,225 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:46,226 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:46,226 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:46,227 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:46,585 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:46,587 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:46,587 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:46,587 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:46,645 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:46,645 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:46,913 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:46,914 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:46,914 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:46,914 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:47,258 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:47,259 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:47,259 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:47,259 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:47,493 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:47,494 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:47,494 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:47,495 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:47,646 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:47,881 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:47,882 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:47,882 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:47,883 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:48,495 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:48,496 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:48,496 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:48,497 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:48,647 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:48,648 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:49,057 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:49,058 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:49,059 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:49,059 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:49,369 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:49,370 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:49,370 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:49,371 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:49,609 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:49,610 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:49,610 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:49,611 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:49,648 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:49,889 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:49,890 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:49,891 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:49,891 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:50,229 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:50,230 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:50,230 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:50,230 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:50,649 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:50,650 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:50,681 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:50,682 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:50,682 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:50,682 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:50,708 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:51,061 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:51,062 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:51,063 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:51,063 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:51,557 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:51,558 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:51,559 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:51,559 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:51,652 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:51,883 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:51,885 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:51,885 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:51,886 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:52,590 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:52,591 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:52,591 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:52,592 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:52,654 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:52,654 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:52,824 DEBUG   SenderThread:2522814 [sender.py:send():380] send: stats
+2023-11-17 12:09:52,829 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:52,830 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:52,830 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:52,831 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:53,113 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:53,114 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:53,114 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:53,115 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:53,413 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:53,415 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:53,415 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:53,415 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:53,655 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:53,753 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:53,754 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:53,755 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:53,755 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:54,020 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:54,021 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:54,021 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:54,022 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:54,291 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:54,292 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:54,292 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:54,293 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:54,661 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:54,662 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:55,255 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:55,256 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:55,256 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:55,273 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:55,664 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:56,275 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:09:56,319 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:56,320 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:56,321 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:56,321 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:56,593 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:09:56,593 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:09:56,620 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:09:56,665 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:56,666 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:56,707 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:56,769 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:56,770 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:56,775 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:57,418 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:57,420 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:57,420 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:57,420 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:57,664 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:57,741 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:57,745 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:57,745 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:57,755 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:58,219 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:58,223 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:58,224 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:58,224 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:58,432 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:58,433 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:58,434 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:58,434 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:58,664 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:58,664 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:09:59,025 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:59,026 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:59,026 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:59,026 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:09:59,665 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:09:59,906 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:09:59,907 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:09:59,908 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:09:59,908 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:00,262 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:00,263 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:00,263 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:00,276 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:00,666 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:00,667 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:10:00,921 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:00,922 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:00,922 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:00,923 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:01,288 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:01,289 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:01,289 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:01,289 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:01,290 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:10:01,570 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:01,571 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:01,572 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:01,587 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:01,667 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:01,844 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:01,848 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:01,848 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:01,849 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:02,059 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:02,060 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:02,061 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:02,075 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:02,487 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:02,488 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:02,488 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:02,489 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:02,669 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:02,670 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:10:02,826 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:02,828 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:02,828 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:02,828 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:03,441 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:03,442 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:03,443 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:03,443 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:03,670 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:03,925 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:03,931 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:03,932 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:03,932 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:04,162 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:04,163 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:04,163 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:04,164 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:04,438 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:04,445 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:04,445 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:04,461 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:04,671 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:04,671 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:10:04,925 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:04,929 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:04,929 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:04,929 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:05,241 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:05,243 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:05,243 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:05,244 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:05,477 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:05,479 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:05,479 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:05,479 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:05,674 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:05,853 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:05,857 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:05,857 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:05,858 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:06,675 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:06,676 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:10:06,705 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:06,706 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:06,706 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:06,707 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:10:06,735 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:07,298 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:07,299 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:07,300 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:07,300 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:07,658 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:07,707 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:07,707 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:07,708 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:07,678 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:08,624 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:08,625 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:08,625 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:08,626 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:08,681 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:08,681 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:10:09,065 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:09,066 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:09,066 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:09,066 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:09,681 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:09,740 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:09,741 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:09,741 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:09,742 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:10,309 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:10,310 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:10,310 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:10,311 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:10,685 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:10,685 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log
+2023-11-17 12:10:10,988 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:10,990 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:10,990 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:10,991 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:11,594 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-17 12:10:11,597 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: stop_status
+2023-11-17 12:10:11,625 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-17 12:10:11,686 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:11,689 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:11,997 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:11,997 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:11,997 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:11,998 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: status_report
+2023-11-17 12:10:12,040 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:12,041 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:12,041 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:12,042 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:12,605 DEBUG   HandlerThread:2522814 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-17 12:10:12,610 DEBUG   SenderThread:2522814 [sender.py:send():380] send: history
+2023-11-17 12:10:12,611 DEBUG   SenderThread:2522814 [sender.py:send_request():407] send_request: summary_record
+2023-11-17 12:10:12,620 INFO    SenderThread:2522814 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-17 12:10:12,687 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/wandb-summary.json
+2023-11-17 12:10:12,688 INFO    Thread-17 :2522814 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231117_120821-bmnb85qb/files/output.log

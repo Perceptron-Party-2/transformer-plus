@@ -1,0 +1,47 @@
+2023-11-16 19:09:13,448 INFO    StreamThr :1251919 [internal.py:wandb_internal():86] W&B internal server running at pid: 1251919, started at: 2023-11-16 19:09:13.446960
+2023-11-16 19:09:13,478 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: status
+2023-11-16 19:09:13,488 INFO    WriterThread:1251919 [datastore.py:open_for_write():85] open: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/run-pedv9y32.wandb
+2023-11-16 19:09:13,493 DEBUG   SenderThread:1251919 [sender.py:send():380] send: header
+2023-11-16 19:09:13,494 DEBUG   SenderThread:1251919 [sender.py:send():380] send: run
+2023-11-16 19:09:14,045 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: check_version
+2023-11-16 19:09:14,073 INFO    SenderThread:1251919 [dir_watcher.py:__init__():211] watching files in: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/files
+2023-11-16 19:09:14,073 INFO    SenderThread:1251919 [sender.py:_start_run_threads():1124] run started: pedv9y32 with start time 1700158153.418056
+2023-11-16 19:09:14,074 DEBUG   SenderThread:1251919 [sender.py:send_request():407] send_request: check_version
+2023-11-16 19:09:14,186 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: run_start
+2023-11-16 19:09:14,189 DEBUG   HandlerThread:1251919 [system_info.py:__init__():32] System info init
+2023-11-16 19:09:14,189 DEBUG   HandlerThread:1251919 [system_info.py:__init__():47] System info init done
+2023-11-16 19:09:14,189 INFO    HandlerThread:1251919 [system_monitor.py:start():194] Starting system monitor
+2023-11-16 19:09:14,196 INFO    HandlerThread:1251919 [system_monitor.py:probe():214] Collecting system info
+2023-11-16 19:09:14,203 INFO    SystemMonitor:1251919 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-16 19:09:14,208 DEBUG   HandlerThread:1251919 [system_info.py:probe():196] Probing system
+2023-11-16 19:09:14,220 DEBUG   HandlerThread:1251919 [system_info.py:_probe_git():181] Probing git
+2023-11-16 19:09:14,236 INFO    SystemMonitor:1251919 [interfaces.py:start():190] Started cpu monitoring
+2023-11-16 19:09:14,254 DEBUG   HandlerThread:1251919 [system_info.py:_probe_git():189] Probing git done
+2023-11-16 19:09:14,257 DEBUG   HandlerThread:1251919 [system_info.py:probe():244] Probing system done
+2023-11-16 19:09:14,260 DEBUG   HandlerThread:1251919 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-87-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2023-11-16T18:09:14.208986', 'startedAt': '2023-11-16T18:09:13.397799', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/louis/projects/week4/transformer-plus/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:Perceptron-Party-2/transformer-plus.git', 'commit': 'eebf47a6966d32c609e5c61c09cfe0cb0077c028'}, 'email': None, 'root': '/home/louis/projects/week4/transformer-plus', 'host': 'k3s-agent-4', 'username': 'root', 'executable': '/home/louis/miniconda3/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 4024.1360833333333, 'min': 2200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 4023.171, 'min': 2200.0, 'max': 3600.0}, {'current': 4023.314, 'min': 2200.0, 'max': 3600.0}, {'current': 4023.271, 'min': 2200.0, 'max': 3600.0}, {'current': 4025.038, 'min': 2200.0, 'max': 3600.0}, {'current': 4024.977, 'min': 2200.0, 'max': 3600.0}, {'current': 4025.048, 'min': 2200.0, 'max': 3600.0}, {'current': 4023.171, 'min': 2200.0, 'max': 3600.0}, {'current': 4023.313, 'min': 2200.0, 'max': 3600.0}, {'current': 4023.268, 'min': 2200.0, 'max': 3600.0}, {'current': 4025.038, 'min': 2200.0, 'max': 3600.0}, {'current': 4024.976, 'min': 2200.0, 'max': 3600.0}, {'current': 4025.048, 'min': 2200.0, 'max': 3600.0}], 'disk': {'/': {'total': 435.77496337890625, 'used': 108.24979400634766}}, 'memory': {'total': 62.71131134033203}}
+2023-11-16 19:09:14,260 INFO    HandlerThread:1251919 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-16 19:09:14,260 INFO    HandlerThread:1251919 [system_monitor.py:probe():227] Publishing system info
+2023-11-16 19:09:14,260 DEBUG   HandlerThread:1251919 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-16 19:09:14,261 DEBUG   HandlerThread:1251919 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-16 19:09:14,262 DEBUG   HandlerThread:1251919 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-16 19:09:14,276 INFO    SystemMonitor:1251919 [interfaces.py:start():190] Started disk monitoring
+2023-11-16 19:09:14,290 INFO    SystemMonitor:1251919 [interfaces.py:start():190] Started memory monitoring
+2023-11-16 19:09:14,300 INFO    SystemMonitor:1251919 [interfaces.py:start():190] Started network monitoring
+2023-11-16 19:09:15,070 INFO    Thread-17 :1251919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/files/requirements.txt
+2023-11-16 19:09:15,071 INFO    Thread-17 :1251919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/files/conda-environment.yaml
+2023-11-16 19:09:18,068 INFO    Thread-17 :1251919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/files/conda-environment.yaml
+2023-11-16 19:09:18,165 DEBUG   HandlerThread:1251919 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-16 19:09:18,167 INFO    HandlerThread:1251919 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-16 19:09:18,171 DEBUG   SenderThread:1251919 [sender.py:send():380] send: files
+2023-11-16 19:09:18,171 INFO    SenderThread:1251919 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-16 19:09:18,197 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-16 19:09:18,201 DEBUG   SenderThread:1251919 [sender.py:send_request():407] send_request: stop_status
+2023-11-16 19:09:18,229 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-16 19:09:18,515 DEBUG   SenderThread:1251919 [sender.py:send():380] send: telemetry
+2023-11-16 19:09:18,516 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 19:09:18,763 INFO    wandb-upload_0:1251919 [upload_job.py:push():131] Uploaded file /tmp/tmptuepgwadwandb/pge8itcm-wandb-metadata.json
+2023-11-16 19:09:19,068 INFO    Thread-17 :1251919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/files/wandb-metadata.json
+2023-11-16 19:09:21,070 INFO    Thread-17 :1251919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/files/output.log
+2023-11-16 19:09:23,071 INFO    Thread-17 :1251919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/louis/projects/week4/transformer-plus/wandb/run-20231116_190913-pedv9y32/files/output.log
+2023-11-16 19:09:24,224 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: status_report
+2023-11-16 19:09:29,225 DEBUG   HandlerThread:1251919 [handler.py:handle_request():146] handle_request: status_report
