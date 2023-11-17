@@ -2,16 +2,12 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.utils.data as data
-#.pyfrom encoder import Encoder
 import dataset
 import constants
 import tokenizer
 from decoder import Transformer
 import wandb
 import tqdm
-
-
-
 wand = True
 
 ##### cuda magic ####
@@ -56,8 +52,6 @@ transformer.train()
 
 ##### Training Loop ####
 for epoch in range(0, constants.EPOCHS):
- 
-            
     #iterate over data batches
     for idx, batch in enumerate(tqdm.tqdm(dl, desc="Processing")):
         d_input = batch['d_input'].to(device)
@@ -82,7 +76,7 @@ for epoch in range(0, constants.EPOCHS):
 
         if wand == True:
             wandb.log({"loss":loss})
-    
+   
     print(f"Epoch {epoch+1}/{constants.EPOCHS}, Loss: {loss}")
     torch.save(transformer.state_dict(), f"./transformer_epoch_{epoch+1}.pt")  # save model at current epoch 
 
@@ -91,7 +85,3 @@ for epoch in range(0, constants.EPOCHS):
 
 if wand == True:   
     wandb.finish()
-
-
-
-
